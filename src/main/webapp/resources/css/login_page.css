@@ -1,0 +1,14 @@
+.page {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+
+}
+.logo {
+
+    padding: 3rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    align-content: center;
+
+}
