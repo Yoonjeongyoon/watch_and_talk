@@ -4,23 +4,39 @@
     min-height: 100vh;
 }
 
-.back_icon {
-    width: 60px;
-    height: 60px;
-    stroke-width: 4px;
-    stroke: #000;
+.back {
+    position: absolute;
+    top: 60px;
+    left: 60px;
 }
 
-.wt_login{
-    width: 600px;
-    height: 300px;
-}
-
-.border{
+.container {
     width: 750px;
     height: 550px;
-    border-radius: 20px;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
     border: 1px solid #000;
-    background: #FFFDFD;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.id{
+    height:157px;
+    width:145px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
