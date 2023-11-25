@@ -12,7 +12,7 @@
 
 .container {
     width: 750px;
-    height: 550px;
+    height: 450px;
     text-align: center;
     background: white;
     padding: 2rem;
@@ -21,13 +21,18 @@
 }
 
 .id{
-    height:157px;
-    width:145px;
-    border-radius: 5px;
-    border: 1px solid #000;
-    background: #FFF;
+    margin-top:30px;
 }
 
+.pw{
+    margin-top: 20px;
+}
+
+.checkbox{
+    position:relative;
+    left:-120px;
+    margin-top:20px;
+}
 body, html {
     height: 100%;
     display: flex;
