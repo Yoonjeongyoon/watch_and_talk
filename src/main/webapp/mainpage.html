@@ -3,28 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <title>W&T 채팅방</title>
-    <link rel="stylesheet" href="resources/css/login_page.css">
+    <link rel="stylesheet" href="resources/css/mainpage.css">
   </head>
   <body>
   <!-- 헤더 영역 -->
   <header>
-    <nav>
-      <!-- 좌측 메뉴 버튼 -->
-      <button>≡</button>
-      <!-- 메인 타이틀 -->
-      <h1>W&T</h1>
-      <!-- 우측 메뉴 항목들 -->
-      <ul>
-        <li><a href="#">Find</a></li>
-        <li><a href="#">Make</a></li>
-        <li><a href="#">List</a></li>
-        <li><a href="#">Add</a></li>
+    <div class="top-bar">
+      <div class="menu-left">
+        <img class="back" src="resources/img/backicon.png" alt="뒤로가기">
+        <img src="resources/img/Logo.png" alt="로고">
+      </div>
+      <div class="menu-right">
         <!-- 로그인 관련 링크들 -->
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">My Page</a></li>
-        <li><a href="#">Alarm</a></li>
-      </ul>
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+        <a href="#">My Page</a>
+        <a href="#">Alarm</a>
+      </div>
+    </div>
+    <nav class="main-navigation">
+      <!-- 메인 메뉴 항목들 -->
+      <a href="#">Find</a>
+      <a href="#">Make</a>
+      <a href="#">List</a>
+      <a href="#">Add</a>
     </nav>
   </header>
 
@@ -33,37 +35,37 @@
     <!-- 인기 채팅방 대형 화면 -->
     <section class="featured-chatroom">
       <img src="path_to_image.jpg" alt="대표 이미지">
-      <div class="chatroom-info">
-        <!-- 채팅방 정보 -->
+      <div class="chatroom-details">
+        <!-- 채팅방 세부 정보 -->
+        <p>2023.10.16 | 10:00 ~ </p>
+        <p>[name] #subject</p>
+        <p>Explanation</p>
       </div>
     </section>
 
-    <!-- 채팅방 리스트 -->
+    <!-- 채팅방 목록 -->
     <section class="chatroom-list">
-      <article class="chatroom">
+      <div class="chatroom">
         <img src="path_to_image.jpg" alt="채팅방 이미지">
         <div class="chatroom-info">
           <!-- 채팅방 정보 -->
+          <p>2023.10.15 | 22:00 ~ </p>
+          <p>[name] subject or explanation</p>
         </div>
-      </article>
-      <!-- 추가 채팅방 article 요소가 여기에 위치 -->
+      </div>
+      <!-- 다른 채팅방 div들도 여기에 추가 -->
     </section>
   </main>
 
   <!-- 사이드바: 친구 목록 -->
-  <aside>
+  <aside class="friend-list">
     <h2>Friend List</h2>
     <ul>
-      <!-- 친구 목록 -->
       <li>친구1</li>
       <li>친구2</li>
       <!-- 추가 친구 리스트 -->
     </ul>
   </aside>
 
-  <!-- 푸터 영역 -->
-  <footer>
-    <!-- 저작권 및 회사 정보 -->
-  </footer>
   </body>
 </html>
