@@ -1,9 +1,17 @@
 /* 기본 스타일 */
+*{
+    background-color: black;
+}
 body, h1, p {
     margin: 0;
     padding: 0;
 }
-
+.category {
+    color: white;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
 /* 상단 바 스타일링 */
 header {
     color: white;
@@ -82,36 +90,74 @@ header {
 /* 메인 콘텐츠 스타일링 */
 main {
     display: flex;
-    flex-direction: column;
+    align-items: flex-start; /* 요소들을 위에서 아래로 정렬 */
 }
 
+.section-container {
+    flex: 3; /* section 컨테이너에 더 큰 비율 할당 */
+    background-color: black;
+    margin-top: 50px;
+}
+
+.friend-list {
+    flex: 1; /* aside에 작은 비율 할당 */
+    height: 100%; /* 세로로 전체 영역을 차지하도록 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 세로 축 중앙 정렬 */
+    justify-content: center; /* 가로 축 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    background-color: black;
+}
+.friend-list h2{
+    color: white;
+}
+.friend-list ul li{
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.empty{
+    flex:1;
+}
 .featured-chatroom {
     display: flex;
     align-items: center;
     color: white;
     padding: 1em;
+    justify-content: space-between;
 }
 
 .featured-chatroom img {
-    width: 50%;
+    flex: 2;
+    max-width: 50%;
     height: auto;
 }
-
+.chatroom-details {
+    flex: 1; /* 남은 공간을 차지하도록 설정 */
+    text-align: center;
+}
 .chatroom-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    padding: 1em;
+    grid-template-columns: repeat(4, 1fr); /* 4개의 열 생성 */
+    gap: 5em; /* 채팅방 사이의 간격 설정 */
+    margin-left: 15%;
 }
 
 .chatroom {
-    background-color: #ececec;
-    padding: 1em;
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    width: 100%; /* div 너비 설정 */
 }
 
 .chatroom img {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* 이미지 최대 너비를 div 너비에 맞춤 */
+    height: auto; /* 이미지 높이 자동 조절 */
 }
-
-/* 친구 목록 사이드바 */
+.chatroom p {
+   color: white;
+}
+.chatroom-info {
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
