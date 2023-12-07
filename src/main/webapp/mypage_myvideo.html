@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>W&T 마이페이지 내 동영상 관리</title>
+    <link rel="stylesheet" href="resources/css/mypage_myvideo.css">
+</head>
+<body>
+<!-- 헤더 영역 -->
+<header>
+    <div class="top-bar">
+        <div class="menu-left">
+            <img class="back" src="resources/img/backicon2.png" alt="뒤로가기">
+        </div>
+        <div class="menu-middle">
+            <img src="resources/img/Logo.png" alt="로고">
+        </div>
+        <div class="menu-right">
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="#">Alarm</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- 메인 컨텐츠 영역 -->
+
+<main>
+    <div class="container">
+        <div class="sidebar_container">
+            <div class="sidebar">
+                <ul>
+                    <p><img src="resources/img/mypageLogo.png" alt="마이페이지 로고" /> 마이페이지</p>
+                    <li><a onclick="location.href='mypage_myvideo.html'" class="active">내 동영상 관리</a></li>
+                    <li>
+                        <a onclick="location.href='mypage_mypersonal.html'">개인 정보 관리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <section class="chatroom-list">
+                <!-- 데이터베이스에서 가져온 채팅방 정보를 각 div에 넣어야됨 -->
+                <div class="chatroom">
+                    <img src="resources/img/ball1.png" alt="Chat room 1 image">
+                    <div class="chatroom-info">
+                        <p>2023.10.15 | 22:00 ~ </p>
+                        <p>[name] 주제 또는 설명</p>
+                    </div>
+                </div>
+                <div class="chatroom">
+                    <img src="resources/img/ball1.png" alt="Chat room 2 image">
+                    <div class="chatroom-info">
+                        <p>2023.10.15 | 22:00 ~ </p>
+                        <p>[name] 주제 또는 설명</p>
+                    </div>
+                </div>
+                <div class="chatroom">
+                    <img src="resources/img/ball1.png" alt="Chat room 1 image">
+                    <div class="chatroom-info">
+                        <p>2023.10.15 | 22:00 ~ </p>
+                        <p>[name] 주제 또는 설명</p>
+                    </div>
+                </div>
+                <div class="chatroom">
+                    <img src="resources/img/ball1.png" alt="Chat room 2 image">
+                    <div class="chatroom-info">
+                        <p>2023.10.15 | 22:00 ~ </p>
+                        <p>[name] 주제 또는 설명</p>
+                    </div>
+                </div>
+                <div class="chatroom">
+                    <img src="resources/img/ball1.png" alt="Chat room 2 image">
+                    <div class="chatroom-info">
+                        <p>2023.10.15 | 22:00 ~ </p>
+                        <p>[name] 주제 또는 설명</p>
+                    </div>
+                </div>
+                <!-- 추가 채팅방 div -->
+            </section>
+        </div>
+        <div class="empty">
+
+        </div>
+
+    </div>
+
+
+</main>
+</body>
+</html>
