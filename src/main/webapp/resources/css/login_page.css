@@ -25,7 +25,6 @@ body, html {
     margin-bottom: 1rem;
 }
 
-
 .profile-text {
     margin-bottom: 2rem;
     color: #333;
@@ -44,6 +43,7 @@ body, html {
     cursor: pointer;
     display: block;
     width: 100%;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -55,16 +55,17 @@ body, html {
     background-color: #59D6FE;
     color: #333;
     margin-bottom: 30px;
-
 }
 
 .register-btn {
     background-color: #ffffff;
     color: #333;
 }
+
 .login-btn:hover, .register-btn:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
+
 .back {
     position: absolute;
     top: 60px;
