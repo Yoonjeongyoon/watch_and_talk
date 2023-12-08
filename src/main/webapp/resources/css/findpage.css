@@ -133,6 +133,26 @@ main {
     max-width: 50%;
     height: auto;
 }
+.search {
+    position: relative;
+    width: 600px;
+}
+
+.search input {
+    width: 100%;
+    border: 1px solid #E8202E;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.search img {
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+}
 .chatroom-details {
     flex: 1; /* 남은 공간을 차지하도록 설정 */
     text-align: center;
@@ -156,7 +176,7 @@ main {
     height: auto; /* 이미지 높이 자동 조절 */
 }
 .chatroom p {
-   color: white;
+    color: white;
 }
 .chatroom-info {
     text-align: center; /* 텍스트 중앙 정렬 */
