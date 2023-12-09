@@ -41,13 +41,16 @@
         <div class="empty"></div>
 
         <section>
+            <div class="search">
+                <form id="searchForm" action="/search" method="get">
+                    <input type="text" />
+                    <img src="resources/img/search.png" id="searchButton" style="cursor: pointer;" />
+                </form>
+            </div>
             <h2 class="category"># soccer</h2>
         </section>
         <section class="chatroom-list">
-            <div class="search">
-                <input type="text" placeholder="주문한 상품을 검색할 수 있어요" />
-                <img src="searchicon.png" />
-            </div>
+
             <!-- 데이터베이스에서 가져온 채팅방 정보를 각 div에 넣어야됨 -->
             <div class="chatroom">
                 <img src="resources/img/ball1.png" alt="Chat room 1 image">
@@ -102,5 +105,10 @@
         </ul>
     </aside>
 </main>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+        document.getElementById('searchForm').submit();
+    });
+</script>
 </body>
 </html>

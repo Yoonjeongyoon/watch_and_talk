@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/watchandtalk</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="@34.64.140.75" uuid="2516c170-c0e1-4eb4-af67-bc1b4c82ec97">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://34.64.140.75:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

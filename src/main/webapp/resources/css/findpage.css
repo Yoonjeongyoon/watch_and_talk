@@ -97,6 +97,9 @@ main {
     flex: 4; /* section 컨테이너에 더 큰 비율 할당 */
     background-color: black;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .friend-list {
@@ -139,19 +142,21 @@ main {
 }
 
 .search input {
-    width: 100%;
-    border: 1px solid #E8202E;
+    width: 120%;
+    border: 1px solid #4ea9a9;
     border-radius: 8px;
     padding: 10px 12px;
     font-size: 14px;
+    height: 25px;
+    color: white;
 }
 
 .search img {
-    position : absolute;
-    width: 17px;
-    top: 10px;
+    position: absolute;
+    width: 20px;
+    top: 15px;
     right: 12px;
-    margin: 0;
+    margin-right:-24%;
 }
 .chatroom-details {
     flex: 1; /* 남은 공간을 차지하도록 설정 */
@@ -180,4 +185,8 @@ main {
 }
 .chatroom-info {
     text-align: center; /* 텍스트 중앙 정렬 */
+}
+h2.category {
+    margin-left: -20%; /* 왼쪽으로 이동 */
+    /* ... 기존의 다른 속성들 ... */
 }
