@@ -1,0 +1,114 @@
+/* 기본 스타일 */
+*{
+    background-color: black;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+.category {
+    color: white;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+/* 상단 바 스타일링 */
+header {
+    color: white;
+    background-color: black;
+}
+.menu-left img {
+    align-items: center;
+}
+
+
+/* 상단 바 스타일 */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* 각 서브 디비전에 대한 스타일 */
+.menu-middle, .menu-right {
+    flex: 1; /* 각각 동일한 flex 비율을 부여 */
+    text-align: center; /* 중앙 정렬 */
+}
+.menu-left{
+    flex:1;
+    margin-left: 50px;
+}
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.menu-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.menu-right ul li {
+    margin-left: 20px;
+}
+
+.menu-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* 메인 콘텐츠 스타일링 */
+main {
+    display: flex;
+    align-items: flex-start; /* 요소들을 위에서 아래로 정렬 */
+}
+
+.video-container {
+    flex: 5; /* section 컨테이너에 더 큰 비율 할당 */
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 7%;
+    color: white;
+}
+.video-container h2{
+    font-size: 40px;
+}
+.video-container p{
+    font-size: 30px;
+}
+.video-container iframe{
+    width: 90%;
+    height: 400px;
+}
+.chat-container{
+    flex: 3;
+}
+.friend-list {
+    flex: 2; /* aside에 작은 비율 할당 */
+    height: 100%; /* 세로로 전체 영역을 차지하도록 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 세로 축 중앙 정렬 */
+    justify-content: center; /* 가로 축 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    background-color: black;
+    margin-top: 100px;
+}
+.friend-list h2{
+    color: white;
+}
+.friend-list ul li{
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+
+
+

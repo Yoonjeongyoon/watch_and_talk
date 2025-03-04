@@ -1,0 +1,244 @@
+/* 기본 스타일 */
+*{
+    background-color: black;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+.category {
+    color: white;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+/* 상단 바 스타일링 */
+header {
+    color: white;
+    background-color: black;
+}
+.menu-left img {
+    align-items: center;
+}
+
+
+/* 상단 바 스타일 */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* 각 서브 디비전에 대한 스타일 */
+.menu-middle, .menu-right {
+    flex: 1; /* 각각 동일한 flex 비율을 부여 */
+    text-align: center; /* 중앙 정렬 */
+}
+.menu-left{
+    flex:1;
+    margin-left: 50px;
+}
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.menu-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.menu-right ul li {
+    margin-left: 20px;
+}
+
+.menu-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.main-navigation {
+    display: flex;
+    justify-content: left;
+    background-color: black;
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 100px;
+
+}
+
+.main-navigation ul li {
+    margin-left: 60px;
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+/* 메인 콘텐츠 스타일링 */
+.container {
+    display: flex; /* Flex 컨테이너를 활성화합니다. */
+    width: 100%; /* 컨테이너의 너비를 최대로 설정합니다. */
+    justify-content: center;
+}
+
+.sidebar_container, .empty {
+    flex: 1; /* mypage-menu와 empty에 1의 비율을 부여합니다. */
+    background-color: black; /* 배경색을 설정합니다 (색상은 예시입니다). */
+
+}
+
+.content {
+    flex: 2; /* content에 2의 비율을 부여하여, 양쪽 div의 두 배 크기를 가지게 합니다. */
+    background-color: #000000; /* 배경색을 설정합니다 (색상은 예시입니다). */
+}
+
+.sidebar {
+    width: 200px; /* 사이드바 너비 */
+    background-color: #000000; /* 배경색 */
+    padding-top: 10px; /* 상단 패딩 */
+    padding-bottom: 20px; /* 하단 패딩 */
+    margin-top: 50px;
+    color: white;
+    align-items: center;
+    display: block;
+    margin-left: auto; /* 왼쪽 마진을 auto로 설정 */
+    margin-right: auto; /* 오른쪽 마진을 auto로 설정 */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar ul p {
+    color: white; /* 글자색 */
+    padding: 10px;
+    margin-bottom: 20px; /* 항목 사이 간격 */
+    font-size: 24px;
+
+}
+.sidebar ul p img {
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    margin-bottom: -9px;
+}
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #4ea9a9;
+    color: white;
+}
+.personal-info-section {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #000000;
+}
+.personal-info-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color:  white;
+}
+.personal-info-form{
+    background-color: #D9D9D9;
+}
+.personal-info-form .form-group {
+    margin-bottom: 15px;
+    background-color: #D9D9D9;
+}
+
+.personal-info-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    background-color:  #D9D9D9;
+}
+
+.personal-info-form .form-group input[type="text"]{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color:  #D9D9D9;
+}
+.personal-info-form .form-group input[type="password"]{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color:  #D9D9D9;
+}
+.personal-info-form .form-group input[type="email"] {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color:  #D9D9D9;
+}
+
+.personal-info-form .id-search {
+    width: 80px;
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.personal-info-form .form-actions {
+    text-align: center;
+    margin-top: 30px;
+    background-color:  #D9D9D9;
+
+}
+.form-group label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+
+}
+.form-group p{
+    color: #666;
+    background-color:  #D9D9D9;
+}
+.personal-info-form .form-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color:#4ea9a9;
+    color: white;
+    cursor: pointer;
+}
+.form-box {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:  #D9D9D9;
+    margin-bottom: 20px;
+}

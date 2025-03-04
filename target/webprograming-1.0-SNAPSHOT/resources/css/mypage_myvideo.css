@@ -1,0 +1,178 @@
+/* 기본 스타일 */
+*{
+    background-color: black;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+.category {
+    color: white;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+/* 상단 바 스타일링 */
+header {
+    color: white;
+    background-color: black;
+}
+.menu-left img {
+    align-items: center;
+}
+
+
+/* 상단 바 스타일 */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* 각 서브 디비전에 대한 스타일 */
+.menu-middle, .menu-right {
+    flex: 1; /* 각각 동일한 flex 비율을 부여 */
+    text-align: center; /* 중앙 정렬 */
+}
+.menu-left{
+    flex:1;
+    margin-left: 50px;
+}
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.menu-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.menu-right ul li {
+    margin-left: 20px;
+}
+
+.menu-right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.main-navigation {
+    display: flex;
+    justify-content: left;
+    background-color: black;
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 100px;
+
+}
+
+.main-navigation ul li {
+    margin-left: 60px;
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+/* 메인 콘텐츠 스타일링 */
+.container {
+    display: flex; /* Flex 컨테이너를 활성화합니다. */
+    width: 100%; /* 컨테이너의 너비를 최대로 설정합니다. */
+    justify-content: center;
+}
+
+.sidebar_container, .empty {
+    flex: 1; /* mypage-menu와 empty에 1의 비율을 부여합니다. */
+    background-color: black; /* 배경색을 설정합니다 (색상은 예시입니다). */
+
+}
+
+.content {
+    flex: 2; /* content에 2의 비율을 부여하여, 양쪽 div의 두 배 크기를 가지게 합니다. */
+    background-color: #000000; /* 배경색을 설정합니다 (색상은 예시입니다). */
+}
+
+.sidebar {
+    width: 200px; /* 사이드바 너비 */
+    background-color: #000000; /* 배경색 */
+    padding-top: 10px; /* 상단 패딩 */
+    padding-bottom: 20px; /* 하단 패딩 */
+    margin-top: 50px;
+    color: white;
+    align-items: center;
+    display: block;
+    margin-left: auto; /* 왼쪽 마진을 auto로 설정 */
+    margin-right: auto; /* 오른쪽 마진을 auto로 설정 */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar ul p {
+    color: white; /* 글자색 */
+    padding: 10px;
+    margin-bottom: 20px; /* 항목 사이 간격 */
+    font-size: 24px;
+
+}
+.sidebar ul p img {
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    margin-bottom: -9px;
+}
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #4ea9a9;
+    color: white;
+}
+.chatroom-list {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열 생성 */
+    gap: 5em; /* 채팅방 사이의 간격 설정 */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.chatroom {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    width: 100%; /* div 너비 설정 */
+}
+
+.chatroom img {
+    max-width: 100%; /* 이미지 최대 너비를 div 너비에 맞춤 */
+    height: auto; /* 이미지 높이 자동 조절 */
+}
+.chatroom p {
+    color: white;
+}
+.chatroom-info {
+    text-align: center; /* 텍스트 중앙 정렬 */
+}

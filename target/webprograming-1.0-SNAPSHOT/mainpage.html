@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>W&T 채팅방</title>
+    <link rel="stylesheet" href="resources/css/mainpage.css">
+  </head>
+  <body>
+  <!-- 헤더 영역 -->
+  <header>
+    <div class="top-bar">
+      <div class="menu-left">
+        <img class="back" src="resources/img/backicon2.png" alt="뒤로가기">
+      </div>
+      <div class="menu-middle">
+        <img src="resources/img/Logo.png" alt="로고">
+      </div>
+      <div class="menu-right">
+       <ul>
+        <li><a href="#">Sign In</a></li>
+         <li><a href="#">Sign Up</a></li>
+         <li><a href="mypage_myvideo.html">My Page</a></li>
+         <li><a href="#">Alarm</a></li>
+       </ul>
+      </div>
+    </div>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="findpage.html">Find</a></li>
+        <li><a href="#">Make</a></li>
+        <li><a href="#">List</a></li>
+        <li><a href="#">Add</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 컨텐츠 영역 -->
+  <main>
+    <div class="section-container">
+      <!-- 인기 채팅방 대형 화면 -->
+      <section class="featured-chatroom">
+        <div class="empty"></div>
+        <img src="resources/img/Rectangle7.png" alt="대표 이미지">
+        <div class="chatroom-details">
+          <!-- 채팅방 세부 정보 -->
+          <p>2023.10.16 | 10:00 ~ </p><br>
+          <p>[name] #subject</p>
+          <p>Explanation</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="category"># soccer</h2>
+      </section>
+      <section class="chatroom-list">
+        <!-- 데이터베이스에서 가져온 채팅방 정보를 각 div에 넣어야됨 -->
+        <div class="chatroom">
+          <img src="resources/img/ball1.png" alt="Chat room 1 image">
+          <div class="chatroom-info">
+            <p>2023.10.15 | 22:00 ~ </p>
+            <p>[name] 주제 또는 설명</p>
+          </div>
+        </div>
+        <div class="chatroom">
+          <img src="resources/img/ball1.png" alt="Chat room 2 image">
+          <div class="chatroom-info">
+            <p>2023.10.15 | 22:00 ~ </p>
+            <p>[name] 주제 또는 설명</p>
+          </div>
+        </div>
+        <div class="chatroom">
+          <img src="resources/img/ball1.png" alt="Chat room 1 image">
+          <div class="chatroom-info">
+            <p>2023.10.15 | 22:00 ~ </p>
+            <p>[name] 주제 또는 설명</p>
+          </div>
+        </div>
+        <div class="chatroom">
+          <img src="resources/img/ball1.png" alt="Chat room 2 image">
+          <div class="chatroom-info">
+            <p>2023.10.15 | 22:00 ~ </p>
+            <p>[name] 주제 또는 설명</p>
+          </div>
+        </div>
+        <div class="chatroom">
+          <img src="resources/img/ball1.png" alt="Chat room 2 image">
+          <div class="chatroom-info">
+            <p>2023.10.15 | 22:00 ~ </p>
+            <p>[name] 주제 또는 설명</p>
+          </div>
+        </div>
+        <!-- 추가 채팅방 div -->
+      </section>
+    </div>
+    <!-- 사이드바: 친구 목록 -->
+    <aside class="friend-list">
+      <h2>Friend List</h2>
+      <ul>
+        <li>오영규</li>
+        <li>정진이</li>
+        <li>509</li>
+        <li>이정진</li>
+        <li>윤정윤</li>
+        <li>팀장님</li>
+        <li>한소리</li>
+        <!-- 추가 친구 리스트 DB에서 가져오기 -->
+      </ul>
+    </aside>
+  </main>
+  </body>
+</html>
